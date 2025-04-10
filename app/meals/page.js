@@ -5,6 +5,12 @@ import MealsGrid from "@/components/meals/meals-grid";
 import { getMeals } from "@/lib/meals";
 import { Suspense } from "react";
 
+
+export const metadata = {
+  title: 'All Meals',
+  description: 'Browse the delicious meals shared by our vibrant community.',
+};
+
 //creo un componente con la richiesta di tutti i pasti, così da poterlo wrappare con il compoenente di react Suspence, 
 //che permette di inserire un fallback, da visualizzare al posto di quel compoentente in caso di attesa della risposta.
 //in questo modo possiamo visualizzare a schermo anche altro oltre che il testo di caricamento.
